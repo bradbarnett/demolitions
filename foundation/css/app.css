@@ -164,11 +164,31 @@ body {
 }
 
 #controls {
-	width: 100px;
+	width: 250px;
 	margin: 0 auto;
 	display: inline-block;
 	position: fixed;
 	left: 50%;
+	overflow: visible;
+}
+
+#controls-time {
+	display: inline;
+}
+
+#lu-colors {
+	display: inline-block;
+	font-size: 80%;
+	color: gray;	
+}
+
+span#lu-text { 
+	display: inline-block;
+    vertical-align: top;
+}
+.switch {
+	padding-left: 15px;
+	height: inherit;
 }
 
 .control {
@@ -181,6 +201,86 @@ body {
 	fill: rgb(232, 108, 67);
 	width: 15px;
 	margin-right: 10px;
+}
+
+.switch.tiny label {
+    height: 1rem;
+    width: 2.5rem;
+    margin-left: -10px;
+}
+
+.switch label {
+    
+}
+
+.switch label:after {
+
+	fill: rgb(255, 124, 81);
+	background: rgb(255, 124, 81);
+    content: "";
+    display: block;
+    height: 1.5rem;
+    left: .025rem;
+    position: absolute;
+    top: .025rem;
+    width: 1.5rem;
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: translate3d(0, 0, 0);
+    transition: left 0.15s ease-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.switch input:checked + label {
+    background-color: rgb(221, 221, 221);
+}
+
+.switch.tiny input:checked + label:after {
+    left: 1.5rem;
+}
+
+#lu-legend {
+	display:inline-block;
+	position:fixed;
+	top: 30px;
+	vertical-align: text-top;
+	background-color: rgba(255,255,255,.7);
+	padding: 5px 2px 2px 2px;
+	display: none;
+}
+
+.legend-box {
+	display: inline-block;
+	width: 25px;
+	height: 15px;
+	border-radius: 2px;
+	margin-right: 7px;
+}
+
+span.legend-label {
+	vertical-align: top;
+	padding-right: 5px; 
+}
+
+
+#yellow {
+	background-color: yellow;
+}
+
+#blue {
+	background-color: steelblue;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#red {
+	background-color: #E25C5C;
 }
 
 #pause {
