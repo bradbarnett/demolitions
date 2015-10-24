@@ -201,19 +201,19 @@ mapDemolitions.addLayer(baseLayer);
         if ($("#exampleCheckboxSwitch").is(":checked")) {
           showSelected.style("fill", function(d) {
             if (d.properties.Category == "SINGLEFAMILY") {
-              return "YELLOW";
+              return "#F3F319";
             }
             else if (d.properties.Category == "MULTIFAMILY") {
-              return "orange";
+              return "#F7AB21";
             }
             else if (d.properties.Category == "COMMERCIAL") {
-              return "#E25C5C";
+              return "#FF625D";
             }
             else if (d.properties.Category == "INSTITUTIONAL") {
-              return "steelblue";
+              return "#6198C5";
             }
             else {
-              return "yellow";
+              return "#F3F319";
             }
           });
         }
@@ -307,19 +307,19 @@ mapDemolitions.addLayer(baseLayer);
         $("#lu-legend").slideDown(150);
         showSelected.style("fill", function(d) {
           if (d.properties.Category == "SINGLEFAMILY") {
-            return "YELLOW";
+            return "#F3F319";
           }
           else if (d.properties.Category == "MULTIFAMILY") {
-            return "orange";
+            return "#F7AB21";
           }
           else if (d.properties.Category == "COMMERCIAL") {
-            return "#E25C5C";
+            return "#FF625D";
           }
           else if (d.properties.Category == "INSTITUTIONAL") {
-            return "steelblue";
+            return "#6198C5";
           }
           else {
-            return "yellow";
+            return "#F3F319";
           }
         });
       }
